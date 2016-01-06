@@ -2,7 +2,7 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Fo\Controller\Fo_UserManagement' => 'Fo\Controller\Fo_UserManagementController',
+            'Fo\Controller\UserManagement' => 'Fo\Controller\UserManagementController',
         ),
     ),
     'router' => array(
@@ -11,12 +11,12 @@ return array(
                 'type'    => 'Literal',
                 'options' => array(
                     // Change this to something specific to your module
-                    'route'    => '/fo_UserManagement',
+                    'route'    => '/userManagement',
                     'defaults' => array(
                         // Change this value to reflect the namespace in which
                         // the controllers for your module are found
                         '__NAMESPACE__' => 'Fo\Controller',
-                        'controller'    => 'Fo_UserManagement',
+                        'controller'    => 'UserManagement',
                         'action'        => 'index',
                     ),
                 ),
